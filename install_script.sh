@@ -8,7 +8,7 @@ local prettyName=$(adb -s $1 shell getprop ro.product.model)
 	  do
 	  echo "Installatroning $APKLIST on $prettyName"
 	  adb -s $1 install -r $APKLIST
-	  adb -s $1 shell am start -n NUNDLEID/.PATH TO MAIN ACTIVITY
+	  adb -s $1 shell am start -n BUNDLEID/.PATH TO MAIN ACTIVITY
 	  adb -s $1 shell input keyevent KEYCODE_WAKEUP
 	  done
 	  echo "Finished Installatroning on $prettyName"
